@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música</title>
+    <!-- Icons Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Player -->
+
+    <main class="player">
+        <!-- Título -->
+        <h1 class="title" id="title"></h1>
+
+        <!-- Cover -->
+       <img src="./imgs/vinyl-record-4043560_640.png" class="cover" id="cover" alt="tocadiscos">
+
+
+        <!-- Audio HTML Media element-->
+
+        <audio id="audio" src=""></audio>
+        
+        <!-- Song list -->
+        
+        <ul class="songs" id="songs">
+        <!--<li><a href="#">song 1</a></li>
+            <li><a href="#">song 2</a></li>
+            <li><a href="#">song 3</a></li> -->
+        </ul>
+        
+        <!-- Progress bar -->
+        <div class="progress-container" id="progress-container">
+            <section class="progress" id="progress"></section>
+        </div>
+
+        <h2>iPod by David</h2>
+
+        <!-- Controls -->
+        <section class="controls">
+            <button class="prev">
+                <i class="bi bi-rewind-btn-fill" id="prev"></i>
+            </button>
+            <button class="play">
+                <i class="bi bi-play-btn-fill" id="play"></i>
+            </button>
+            <button class="next">
+                <i class="bi bi-fast-forward-btn-fill" id="next"></i>
+            </button>
+        </section>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
